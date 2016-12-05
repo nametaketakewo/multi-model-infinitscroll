@@ -1,0 +1,35 @@
+<div id='hoge_container'>
+  <table id="hoges">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+
+    <tbody class="page">
+      <%= render @hoges %>
+    </tbody>
+  </table>
+
+  <br>
+  <%= paginate @hoges, remote: true, param_name: :hoge_page %>
+</div>
+
+<div id='piyo_container'>
+  <table id="piyos">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+
+    <tbody class="page">
+      <%= render @piyos %>
+    </tbody>
+  </table>
+
+  <br>
+  <%= paginate @piyos, remote: true, param_name: :piyo_page %>
+</div>

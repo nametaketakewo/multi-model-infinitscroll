@@ -13,3 +13,23 @@
  *= require_tree .
  *= require_self
  */
+
+ #infscr-loading, .pagination {
+   width: 0;
+   display: none;
+ }
+
+ #hoge_container, #piyo_container{
+   float: left;
+   margin: 10px 50px;
+   padding: 10px 50px;
+ }
+
+ thead, tbody {
+   display:block;
+ }
+
+ tbody {
+   overflow-y:scroll;
+   height:500px;
+ }

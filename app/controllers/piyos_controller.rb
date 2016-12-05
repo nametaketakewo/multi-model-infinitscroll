@@ -1,0 +1,2 @@
+class PiyosController < ApplicationController
+end
